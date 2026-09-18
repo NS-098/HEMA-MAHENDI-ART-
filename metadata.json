@@ -1,0 +1,6 @@
+{
+  "name": "Hema Mehendi Art",
+  "description": "Bespoke bridal, traditional, and contemporary mehndi design services by Hema Mehendi Art.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
