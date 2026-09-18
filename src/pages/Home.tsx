@@ -55,8 +55,8 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1610660429781-b51f7bb99307?auto=format&fit=crop&q=80&w=2000" 
-            alt="Mehendi Background" 
+            src="https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789736778/web_hero_image.png" 
+            alt="Hema Mehendi Art Hero Banner" 
             className="w-full h-full object-cover opacity-80 scale-105 transform hover:scale-100 transition-transform duration-[10s]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-cream"></div>
