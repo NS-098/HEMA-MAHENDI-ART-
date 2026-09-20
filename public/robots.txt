@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hemamahendiart.netlify.app/sitemap.xml

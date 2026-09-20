@@ -44,7 +44,9 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link to="/" className="text-cream/80 hover:text-gold transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-cream/80 hover:text-gold transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="text-cream/80 hover:text-gold transition-colors">Mehendi Types</Link></li>
+              <li><Link to="/services" className="text-cream/80 hover:text-gold transition-colors">Mehendi Services</Link></li>
+              <li><Link to="/gallery" className="text-cream/80 hover:text-gold transition-colors">Design Gallery</Link></li>
+              <li><Link to="/contact" className="text-cream/80 hover:text-gold transition-colors">Contact Us</Link></li>
               <li><Link to="/book" className="text-cream/80 hover:text-gold transition-colors">Book Appointment</Link></li>
             </ul>
           </div>
