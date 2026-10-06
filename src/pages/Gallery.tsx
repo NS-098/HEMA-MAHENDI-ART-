@@ -60,14 +60,14 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 6,
-    title: "Backhand Floral Mandala",
+    title: "Traditional bridal mehendi design with intricate details on the feet",
     category: "Engagement",
     image: 'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731287/IMG_7687.jpg',
     description: "Minimalist yet striking lotus centerpiece with finger lace work."
   },
   {
     id: 7,
-    title: "Artisan Cuff & Finger Motifs",
+    title: "Detailed floral mehendi design on the back of the hand",
     category: "Traditional",
     image: 'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731286/IMG_7099.jpg',
     description: "Graceful fusion of Mughal archways and traditional leaf tendrils."

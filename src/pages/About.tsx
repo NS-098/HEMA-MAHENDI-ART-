@@ -41,7 +41,7 @@ export default function About() {
           >
             <img 
               src={aboutImage} 
-              alt="Hema working on mehendi" 
+              alt="Certified for Mahendi Art Hema Mahndi art" 
               className="rounded-2xl shadow-xl w-full object-cover aspect-square md:aspect-[4/5] lg:aspect-square"
             />
           </motion.div>

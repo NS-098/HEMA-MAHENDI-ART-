@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 z-50">
-            <img src={logo} alt="Hema Mehendi Art" className="h-10 w-10 md:h-12 md:w-12 object-contain" />
+            <img src={logo} alt="logo hema mahendi art" className="h-10 w-10 md:h-12 md:w-12 object-contain" />
             <span className="font-serif text-2xl font-bold tracking-wider text-mehendi">
               Hema Mehendi
             </span>

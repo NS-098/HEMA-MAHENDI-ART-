@@ -10,14 +10,31 @@ import rajwadiImg from '../assets/images/regenerated_image_1785772746413.jpg';
 const categories = [
   { name: 'Traditional Mahendi', image: traditionalMahendiImg },
   { name: 'Engagement Mahendi', image: engagementMahendiImg },
-  { name: 'Bridal Mehendi', image: thirdCategoryImg },
-  { name: 'Royal Mahendi Art', image: rajwadiImg },
+  { 
+    name: 'Bridal Mehendi', 
+    image: thirdCategoryImg,
+    alt: "Intricate bridal mehendi design on a bride's hands by Hema Mahendi Art",
+  },
+  { 
+    name: 'Royal Mahendi Art', 
+    image: rajwadiImg,
+    alt: "Mehendi artist applying intricate henna designs on a bride's hand",
+  },
 ];
 
 const portfolio = [
-  'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731290/IMG_0073.jpg',
-  'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731287/IMG_7687.jpg',
-  'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731286/IMG_7099.jpg',
+  {
+    url: 'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731290/IMG_0073.jpg',
+    alt: 'Hema Mehendi Art Design 1',
+  },
+  {
+    url: 'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731287/IMG_7687.jpg',
+    alt: 'Traditional bridal mehendi design with intricate details on the feet',
+  },
+  {
+    url: 'https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789731286/IMG_7099.jpg',
+    alt: 'Detailed floral mehendi design on the back of the hand',
+  },
 ];
 
 export default function Home() {
@@ -56,7 +73,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src="https://res.cloudinary.com/iokrdk9i/image/upload/f_auto,q_auto/v1789736778/web_hero_image.png" 
-            alt="Hema Mehendi Art Hero Banner" 
+            alt="Instagram I'd of Hema mahendi art" 
             className="w-full h-full object-cover opacity-80 scale-105 transform hover:scale-100 transition-transform duration-[10s]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-cream"></div>
@@ -129,7 +146,7 @@ export default function Home() {
                 className="flex flex-col items-center group cursor-pointer"
               >
                 <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold transition-all duration-500 mb-6 relative">
-                  <img src={cat.image} alt={cat.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                  <img src={cat.image} alt={cat.alt || cat.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-mehendi/20 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
                 <h3 className="font-serif text-2xl text-mehendi group-hover:text-gold transition-colors">{cat.name}</h3>
@@ -155,7 +172,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {portfolio.map((img, idx) => (
+            {portfolio.map((item, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -166,8 +183,8 @@ export default function Home() {
                 onClick={() => setLightboxIndex(idx)}
               >
                 <img 
-                  src={img} 
-                  alt={`Hema Mehendi Art Design ${idx + 1}`} 
+                  src={item.url} 
+                  alt={item.alt} 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
                   loading="lazy"
                 />
@@ -231,8 +248,8 @@ export default function Home() {
               onClick={(e) => e.stopPropagation()}
             >
               <img 
-                src={portfolio[lightboxIndex]} 
-                alt={`Hema Mehendi Design ${lightboxIndex + 1}`} 
+                src={portfolio[lightboxIndex].url} 
+                alt={portfolio[lightboxIndex].alt} 
                 className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
               />
             </div>
