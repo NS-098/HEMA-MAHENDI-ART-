@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-3xl text-gold mb-4">Hema Mehendi Art</h3>
             <p className="text-cream/80 leading-relaxed mb-6">
-              Elevating traditional mehendi into a modern art form. Specializing in bespoke bridal, traditional, and contemporary henna designs tailored for your special moments.
+              Don't forget our tradition; let's enhance the artwork.
             </p>
             <div className="flex space-x-4">
               <a 

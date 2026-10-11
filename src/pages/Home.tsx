@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import traditionalMahendiImg from '../assets/images/regenerated_image_1785665258951.jpg';
 import engagementMahendiImg from '../assets/images/regenerated_image_1785665571021.jpg';
 import thirdCategoryImg from '../assets/images/regenerated_image_1785665806005.jpg';
@@ -269,14 +269,6 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-mehendi text-cream px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
-          <Star className="w-12 h-12 text-gold mx-auto mb-8 opacity-80" />
-          <h2 className="font-serif text-3xl md:text-5xl mb-12 leading-tight">"Hema's artistry made my bridal look complete. The color was incredibly dark and the designs were flawlessly intricate."</h2>
-          <p className="tracking-widest uppercase text-gold font-bold">Priya S. &mdash; Bride</p>
-        </div>
-      </section>
 
       {/* Final CTA */}
       <section className="py-32 px-4 text-center bg-cream-dark relative overflow-hidden">

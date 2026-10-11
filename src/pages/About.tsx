@@ -4,10 +4,9 @@ import { CheckCircle2 } from 'lucide-react';
 import aboutImage from '../assets/images/regenerated_image_1785661721449.jpg';
 
 const reasons = [
-  "10+ Years of Professional Experience",
   "100% Organic, Chemical-Free Henna",
   "Bespoke, Custom-Designed Patterns",
-  "Guaranteed Dark, Long-Lasting Stain",
+  "Dark, Long-Lasting Stain",
   "Hygienic and Professional Setup",
   "Specialized in Bridal & Portrait Art",
 ];
@@ -39,6 +38,20 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "ImageObject",
+                  "contentUrl": "https://hemamahendiart.netlify.app/assets/regenerated_image_1785661721449-CQkLJE8V.jpg",
+                  "url": "https://hemamahendiart.netlify.app/assets/regenerated_image_1785661721449-CQkLJE8V.jpg",
+                  "name": "Mehendi Artist Receiving an Achievement Certificate",
+                  "description": "Hema Mahendi Artist receiving an achievement certificate from Jayshree, a mehendi artist.",
+                  "creditText": "Hema Mahendi Art"
+                })
+              }}
+            />
             <img 
               src={aboutImage} 
               alt="Certified for Mahendi Art Hema Mahndi art" 
@@ -57,18 +70,17 @@ export default function About() {
               Founded on a deep love for Indian heritage and artistry, Hema Mehendi Art began over a decade ago. What started as a childhood fascination blossomed into a professional endeavor dedicated to adorning clients on their most significant days.
             </p>
             <p className="text-gray-700 leading-relaxed mb-8">
-              Every stroke of the henna cone is applied with precision and intention. We believe that mehendi is more than just a temporary tattoo; it's a blessing, a symbol of joy, and a deeply personal piece of art tailored to reflect your unique journey.
+              Hema Suthar began her career with a passion for this timeless art and formal artistic training. Hema is certified in Mehndi Art by{' '}
+              <a 
+                href="https://in.pinterest.com/pin/680184349974558072/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gold font-semibold hover:text-mehendi underline decoration-gold/60 hover:decoration-mehendi transition-colors inline-flex items-center gap-1"
+              >
+                Jayshree Panchal
+              </a>
+              , who is a Professional Mehndi Artist &amp; Educator. Every stroke of the henna cone is applied with precision, mastery, and deep-rooted dedication to making each celebration unforgettable.
             </p>
-            <div className="grid grid-cols-2 gap-8 text-mehendi border-t border-cream-dark pt-8">
-              <div>
-                <span className="block font-serif text-4xl text-gold mb-2">10+</span>
-                <span className="uppercase tracking-widest text-sm font-semibold">Years Experience</span>
-              </div>
-              <div>
-                <span className="block font-serif text-4xl text-gold mb-2">500+</span>
-                <span className="uppercase tracking-widest text-sm font-semibold">Happy Brides</span>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -79,13 +91,13 @@ export default function About() {
           <div className="bg-white p-12 shadow-sm rounded-lg border-t-4 border-mehendi">
             <h3 className="font-serif text-3xl text-mehendi mb-4">Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
-              To provide an unparalleled henna experience through exquisite designs, professional service, and the use of the highest quality, organic ingredients, ensuring safety and a stunning stain for every client.
+              Our mission is to get cover indian celebrity's hand to Putting henna on an Indian celebrity.
             </p>
           </div>
           <div className="bg-white p-12 shadow-sm rounded-lg border-t-4 border-gold">
             <h3 className="font-serif text-3xl text-mehendi mb-4">Our Vision</h3>
             <p className="text-gray-600 leading-relaxed">
-              To elevate the traditional art of mehendi onto the global stage, blending heritage with modern aesthetics, and setting the standard for luxury henna services worldwide.
+              To elevate the traditional art onto the whole india stage, blending heritage with modern aesthetics.
             </p>
           </div>
         </div>
