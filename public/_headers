@@ -1,0 +1,33 @@
+# Netlify Cache-Control Headers for Vite SPA
+
+# HTML documents: Never cache HTML files to ensure instant deploy updates
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Hashed Vite Build Output (JS, CSS): Cache immutably for 1 year
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static Media & Fonts
+/favicon.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/favicon.ico
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.avif
+  Cache-Control: public, max-age=31536000, immutable
