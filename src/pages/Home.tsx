@@ -85,11 +85,7 @@ export default function Home() {
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
+          <div className="animate-fade-in">
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 tracking-wide drop-shadow-lg">
               Hema Mehendi Art
             </h1>
@@ -104,7 +100,7 @@ export default function Home() {
                 View Portfolio
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
