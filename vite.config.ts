@@ -21,22 +21,6 @@ export default defineConfig(() => {
           contact: path.resolve(__dirname, 'contact.html'),
           book: path.resolve(__dirname, 'book.html'),
         },
-        output: {
-          manualChunks(id) {
-            if (id.includes('node_modules')) {
-              if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
-                return 'vendor-react';
-              }
-              if (id.includes('motion')) {
-                return 'vendor-motion';
-              }
-              if (id.includes('lucide-react')) {
-                return 'vendor-icons';
-              }
-              return 'vendor-misc';
-            }
-          },
-        },
       },
       cssCodeSplit: true,
     },
